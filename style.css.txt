@@ -1,0 +1,259 @@
+/* --- Reset & Global Variables --- */
+:root {
+    --primary: #0066cc;
+    --primary-dark: #004b99;
+    --text-main: #1f2937;
+    --text-muted: #4b5563;
+    --bg-light: #f8fafc;
+    --bg-white: #ffffff;
+    --border-color: #e2e8f0;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-main);
+    line-height: 1.6;
+    background-color: var(--bg-white);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Navigation --- */
+header {
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    margin-left: 24px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+    background-color: #e0e7ff;
+    color: var(--primary) !important;
+}
+
+.btn-secondary:hover {
+    background-color: #c7d2fe;
+}
+
+.btn-nav {
+    border: 1px solid var(--primary);
+    color: var(--primary) !important;
+}
+
+.btn-nav:hover {
+    background-color: var(--primary);
+    color: #ffffff !important;
+}
+
+.btn-large {
+    padding: 14px 28px;
+    font-size: 1.05rem;
+}
+
+/* --- Hero Section --- */
+.hero {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.7rem;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero .highlight {
+    color: var(--primary);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* --- Sections Common --- */
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+/* --- About Section --- */
+.about-section {
+    background-color: var(--bg-white);
+}
+
+.about-card {
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--primary);
+    padding: 30px;
+    border-radius: 0 8px 8px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* --- Services Section --- */
+.services-section {
+    background-color: var(--bg-light);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background-color: var(--bg-white);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.service-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    background-color: var(--bg-white);
+}
+
+.contact-box {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 12px;
+}
+
+.contact-box h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.contact-box p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+/* --- Footer --- */
+footer {
+    border-top: 1px solid var(--border-color);
+    padding: 25px 0;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    nav {
+        display: none; /* Keeps simple header clean on small mobile screens */
+    }
+}
