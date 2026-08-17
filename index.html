@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharpminds Work | Modern IT Solutions</title>
+    <title>Sharpminds Work | Enterprise IT Consulting & System Integration</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header / Navigation -->
     <header>
         <div class="container nav-container">
-            <a href="#" class="logo">Sharpminds<span>.work</span></a>
+            <a href="#" class="logo">Sharpminds<span class="logo-accent">.work</span></a>
             <nav>
-                <a href="#about">About Us</a>
+                <a href="#about">About</a>
                 <a href="#services">Services</a>
-                <a href="#contact" class="btn btn-nav">Contact Us</a>
+                <a href="#capabilities">Capabilities</a>
+                <a href="#process">Our Approach</a>
+                <a href="#contact" class="btn btn-nav">Consult An Expert</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container hero-content">
-            <h1>Reliable & Scalable <br><span class="highlight">IT Solutions</span> for Growing Businesses</h1>
-            <p>We streamline business processes, automate routine tasks, and build robust IT architectures tailored to your goals.</p>
-            <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary">Our Services</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="hero-badge">Enterprise IT Services & Managed Solutions</div>
+                <h1>Architecting Digital Growth for <span class="highlight">Modern Enterprises</span></h1>
+                <p>We deliver end-to-end system integration, cloud transformation, and process automation to optimize your core infrastructure and drive operational efficiency.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Schedule a Consultation</a>
+                    <a href="#services" class="btn btn-secondary btn-large">Explore Capabilities</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="stat-card">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Architecture Uptime Optimization</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3x</div>
+                    <div class="stat-label">Faster Workflow Automation Delivery</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">AU</div>
+                    <div class="stat-label">Local Cloud Infrastructure & Support</div>
+                </div>
             </div>
         </div>
     </section>
@@ -35,10 +57,15 @@
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <p class="section-subtitle">Delivering technical excellence and practical innovation</p>
-            <div class="about-card">
-                <p>At <strong>Sharpminds Work</strong>, we empower organizations by modernizing their technology stack, optimizing workflows, and integrating mission-critical applications. Whether you need system integration, cloud optimization, or business process automation, we provide clear, end-to-end guidance to keep your business running smoothly.</p>
+            <div class="about-wrapper">
+                <div class="about-header">
+                    <span class="section-tag">WHO WE ARE</span>
+                    <h2>Engineering Precision into Modern Business Infrastructure</h2>
+                </div>
+                <div class="about-content">
+                    <p>At <strong>Sharpminds Work</strong>, we operate as a specialized technology partner for growing enterprises. We eliminate technical friction, modernize legacy architectures, and engineer automated data pipelines that keep your business scalable, resilient, and secure.</p>
+                    <p>Whether you require cloud-native migrations, robust API orchestration, or full-stack process automation, our team bridges the gap between high-level business strategy and technical execution.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -46,26 +73,78 @@
     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="container">
-            <h2 class="section-title">What We Do</h2>
-            <p class="section-subtitle">Tailored technology solutions to drive efficiency</p>
+            <div class="text-center">
+                <span class="section-tag">OUR SERVICES</span>
+                <h2 class="section-title">Core Consulting & Solutions</h2>
+                <p class="section-subtitle">Tailored technology capabilities built for performance and security</p>
+            </div>
             
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">⚡</div>
-                    <h3>Process Automation</h3>
-                    <p>Automate repetitive, high-volume operational workflows to reduce overhead, eliminate manual entry errors, and scale your operations faster.</p>
+                    <h3>Business Process Automation</h3>
+                    <p>Streamline complex operational workflows, reduce manual intervention errors, and accelerate core business functions using modern automation platforms.</p>
+                    <ul class="service-list">
+                        <li>Workflow Optimization</li>
+                        <li>RPA & Data Pipelines</li>
+                        <li>Operational Analytics</li>
+                    </ul>
                 </div>
                 
                 <div class="service-card">
                     <div class="service-icon">🔗</div>
                     <h3>System & API Integration</h3>
-                    <p>Connect your existing software ecosystem seamlessly. We build secure, efficient pipelines to keep your enterprise data synchronized.</p>
+                    <p>Unify disjointed software systems. We build secure, resilient API channels to ensure continuous enterprise data synchronization.</p>
+                    <ul class="service-list">
+                        <li>Custom Middleware & APIs</li>
+                        <li>ERP / CRM Synchronization</li>
+                        <li>Legacy System Modernization</li>
+                    </ul>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">☁️</div>
-                    <h3>Cloud & Architecture Support</h3>
-                    <p>Optimize deployment strategies, set up robust web infrastructure, and maintain high performance and uptime for your critical digital assets.</p>
+                    <h3>Cloud Architecture & DevOps</h3>
+                    <p>Design, deploy, and manage scalable cloud environments optimized for cost efficiency, high availability, and rapid deployment cycles.</p>
+                    <ul class="service-list">
+                        <li>Multi-Cloud Strategy</li>
+                        <li>Infrastructure as Code (IaC)</li>
+                        <li>Continuous Deployment (CI/CD)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">ENGAGEMENT FRAMEWORK</span>
+                <h2 class="section-title">How We Deliver Results</h2>
+                <p class="section-subtitle">A structured methodology that guarantees alignment and delivery excellence</p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-num">01</div>
+                    <h4>Discovery & Audit</h4>
+                    <p>We analyze your existing technology ecosystem, identify operational bottlenecks, and define strategic technical objectives.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">02</div>
+                    <h4>Architecture & Blueprint</h4>
+                    <p>Our team designs a scalable, secure blueprint tailored specifically to your data needs and growth trajectory.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">03</div>
+                    <h4>Engineering & Integration</h4>
+                    <p>We execute iterative development, deploy automated pipelines, and conduct rigorous testing with zero operational downtime.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">04</div>
+                    <h4>Managed Support & Optimization</h4>
+                    <p>Continuous monitoring, proactive performance tuning, and ongoing support to maximize long-term infrastructure value.</p>
                 </div>
             </div>
         </div>
@@ -74,10 +153,75 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <div class="contact-box">
-                <h2>Ready to streamline your tech stack?</h2>
-                <p>Reach out to discuss your project requirements or get a quick consultation.</p>
-                <a href="mailto:info@sharpminds.work" class="btn btn-primary btn-large">Email Us: info@sharpminds.work</a>
+            <div class="contact-grid">
+                <!-- Direct Contact Details -->
+                <div class="contact-info">
+                    <span class="section-tag light-tag">LET'S TALK</span>
+                    <h2>Partner with Sharpminds Work</h2>
+                    <p>Ready to modernize your systems or streamline operational workflows? Schedule a technical discussion with our team today.</p>
+                    
+                    <div class="info-card">
+                        <div class="info-item">
+                            <span class="info-icon">📧</span>
+                            <div>
+                                <strong>Direct Email</strong>
+                                <p><a href="mailto:info@sharpminds.work">info@sharpminds.work</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <strong>Consulting Hub</strong>
+                                <p>Perth, Western Australia</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">⏱️</span>
+                            <div>
+                                <strong>Response Time</strong>
+                                <p>Within 1 Business Day</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <h3>Request an Initial Consultation</h3>
+                    <form action="mailto:info@sharpminds.work" method="post" enctype="text/plain">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="e.g., Sarah Jenkins" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" name="email" placeholder="s.jenkins@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name / ABN (Optional)</label>
+                            <input type="text" id="company" name="company" placeholder="e.g., Enterprise Solutions Pty Ltd">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Primary Area of Interest</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service focus...</option>
+                                <option value="automation">Business Process Automation</option>
+                                <option value="integration">System & API Integration</option>
+                                <option value="cloud">Cloud Architecture & DevOps</option>
+                                <option value="general">General Advisory & Managed Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Overview</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Briefly describe your objectives or technical requirements..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Submit Inquiry</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -85,7 +229,13 @@
     <!-- Footer -->
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 Sharpminds.work. All rights reserved.</p>
+            <div class="footer-brand">
+                <a href="#" class="logo text-white">Sharpminds<span class="logo-accent">.work</span></a>
+                <p>Enterprise Technology Solutions & System Integration</p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Sharpminds Work. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
